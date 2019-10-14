@@ -7,7 +7,7 @@
     function setRem() {
         id = new Date().getTime();
 
-        var fontSize = innerWidth >= 768 ? '100px' : innerWidth / 767 * 100 + 'px';
+        var fontSize = innerWidth >= 375 ? '100px' : innerWidth / 767 * 100 + 'px';
 
         var style = $('<style>html{font-size: ' + fontSize + ';}</style>');
         style.attr('id', id);
